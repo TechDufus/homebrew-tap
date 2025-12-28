@@ -5,21 +5,21 @@
 class Openkanban < Formula
   desc "TUI kanban board for orchestrating AI coding agents"
   homepage "https://github.com/TechDufus/openkanban"
-  version "0.0.1"
+  version "0.0.2"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TechDufus/openkanban/releases/download/v0.0.1/openkanban_0.0.1_darwin_amd64.tar.gz"
-      sha256 "7c7c403944f248ae417c0950d548dc13f2acaf76c615731e0765baebd82c4a15"
+      url "https://github.com/TechDufus/openkanban/releases/download/v0.0.2/openkanban_0.0.2_darwin_amd64.tar.gz"
+      sha256 "8adb0f21fb651e05eb429ae52346d2b3bc0a6a49a98b0fa5d91495cb8d688f2c"
 
       def install
         bin.install "openkanban"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TechDufus/openkanban/releases/download/v0.0.1/openkanban_0.0.1_darwin_arm64.tar.gz"
-      sha256 "4dc9579c695ad2fce452df5e5c3d7b08279d1e581c818a533cc975cafbc05cdd"
+      url "https://github.com/TechDufus/openkanban/releases/download/v0.0.2/openkanban_0.0.2_darwin_arm64.tar.gz"
+      sha256 "36e21fcae8f02818eba1bcfb412af441318139c53d889ba84b8b0941fbb156c4"
 
       def install
         bin.install "openkanban"
@@ -29,15 +29,15 @@ class Openkanban < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TechDufus/openkanban/releases/download/v0.0.1/openkanban_0.0.1_linux_amd64.tar.gz"
-      sha256 "0d32131fa3ca15ba0194a45676e6010e2ead7f57a92704bf629e4c418a803b8b"
+      url "https://github.com/TechDufus/openkanban/releases/download/v0.0.2/openkanban_0.0.2_linux_amd64.tar.gz"
+      sha256 "4d6c1eade0cadef9f1872390723512667b8bfd83d9c7f16835a62b524d9a7354"
       def install
         bin.install "openkanban"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TechDufus/openkanban/releases/download/v0.0.1/openkanban_0.0.1_linux_arm64.tar.gz"
-      sha256 "4d1ec7d7d1f9031be7f9d59bb31ac2cac657fae520100bf71b95fbe91b54b773"
+      url "https://github.com/TechDufus/openkanban/releases/download/v0.0.2/openkanban_0.0.2_linux_arm64.tar.gz"
+      sha256 "c889b34d4fd6595f245e2ccfef1ec669cf4f70f91746ea516f08eba7bfb0cb44"
       def install
         bin.install "openkanban"
       end
