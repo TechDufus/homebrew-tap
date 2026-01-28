@@ -3,7 +3,7 @@ cask "openkanban" do
   name "openkanban"
   desc "TUI kanban board for orchestrating AI coding agents"
   homepage "https://github.com/TechDufus/openkanban"
-  version "0.0.40"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "openkanban" do
     on_intel do
       url "https://github.com/TechDufus/openkanban/releases/download/v#{version}/openkanban_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/TechDufus/openkanban"
-      sha256 "1e4a02aa4a85fd6a876888af7304de6edf600f79dd09cbf255632a6982c51165"
+      sha256 "173afcbdda4a7b216e8cb54e57551f4f6d8005f87f3dce2846976daf50485fb3"
     end
     on_arm do
       url "https://github.com/TechDufus/openkanban/releases/download/v#{version}/openkanban_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/TechDufus/openkanban"
-      sha256 "68611aac049d5a6007666eb4e5260e03f7f28bc8ce91cbe2accca29b0228d318"
+      sha256 "a8b32a6aaeba04741a2ec20e9d76b6c5dc56b81ab3e6aba95d25297b3ea123a3"
     end
   end
 
@@ -28,12 +28,12 @@ cask "openkanban" do
     on_intel do
       url "https://github.com/TechDufus/openkanban/releases/download/v#{version}/openkanban_#{version}_linux_amd64.tar.gz",
         verified: "github.com/TechDufus/openkanban"
-      sha256 "4df9ca1d06b27e55bb85d191ea799067401570f9e81612647f0302fca4050c63"
+      sha256 "2242786a3705dee026edff0cce88a5ce108b139178caebe188766b553ca7b9c6"
     end
     on_arm do
       url "https://github.com/TechDufus/openkanban/releases/download/v#{version}/openkanban_#{version}_linux_arm64.tar.gz",
         verified: "github.com/TechDufus/openkanban"
-      sha256 "886e14425ba422fa9c5b500da4f39bb3d85689945cf1104db94763b0fd90ab2a"
+      sha256 "afa46dcec9578f55f79436ad2deb3f8690f22350d5266304cd587feb820c0aba"
     end
   end
 
